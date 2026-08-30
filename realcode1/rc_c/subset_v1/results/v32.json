@@ -1,0 +1,44 @@
+{
+  "tag": "v32",
+  "tau": 0.99,
+  "n_positive": 45,
+  "n_negative": 353,
+  "n_ambiguous_excluded": 2,
+  "strict_span_and_line": {
+    "tp": 3,
+    "fp": 108,
+    "fn": 42,
+    "precision": 0.027,
+    "recall": 0.0667,
+    "f1": 0.0385
+  },
+  "exact_span": {
+    "tp": 3,
+    "fp": 108,
+    "fn": 42,
+    "precision": 0.027,
+    "recall": 0.0667,
+    "f1": 0.0385
+  },
+  "overlap_recall": 0.0667,
+  "file_level": {
+    "tp": 4,
+    "fp": 6,
+    "fn": 32,
+    "precision": 0.4,
+    "recall": 0.1111,
+    "f1": 0.1739
+  },
+  "strict_recall_by_lang": {
+    "go": 0.0,
+    "ini": 0.0,
+    "java": 0.0385,
+    "js": 0.0,
+    "json": 1.0,
+    "py": 0.0,
+    "sh": 0.0,
+    "ts": 0.0,
+    "xml": 0.0,
+    "yaml": 0.3333
+  }
+}

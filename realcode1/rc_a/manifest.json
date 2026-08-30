@@ -1,0 +1,23 @@
+{
+  "benchmark": "SecMask RealCode-1 / RC-A",
+  "provenance": "natural real code, natural negatives",
+  "selection_sha": "580b57457e4f24925fbac1fb704819dc9944357ac048859db1c3a89c30b60d50",
+  "files": 422,
+  "lookalike_spans": 2629,
+  "by_category": {
+    "ssh_pubkey": 1,
+    "env_var_name": 150,
+    "hex_sha1_or_git": 500,
+    "ipv4": 120,
+    "uuid": 600,
+    "hex_sha256": 500,
+    "hex_md5": 400,
+    "sri_integrity": 331,
+    "mac": 23,
+    "pem_public": 4
+  },
+  "repos_used": 24,
+  "policy": "POLICY_NEGATIVE; sanitation-gated",
+  "corpus_sha256": "26a1318762e4c4812a06c09f64381950923c7d082ee1e09fb6c934b360a86089",
+  "frozen": true
+}

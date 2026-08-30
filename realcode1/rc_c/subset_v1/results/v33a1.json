@@ -1,0 +1,44 @@
+{
+  "tag": "v33a1",
+  "tau": 0.99,
+  "n_positive": 45,
+  "n_negative": 353,
+  "n_ambiguous_excluded": 2,
+  "strict_span_and_line": {
+    "tp": 17,
+    "fp": 177,
+    "fn": 28,
+    "precision": 0.0876,
+    "recall": 0.3778,
+    "f1": 0.1423
+  },
+  "exact_span": {
+    "tp": 17,
+    "fp": 177,
+    "fn": 28,
+    "precision": 0.0876,
+    "recall": 0.3778,
+    "f1": 0.1423
+  },
+  "overlap_recall": 0.4444,
+  "file_level": {
+    "tp": 27,
+    "fp": 26,
+    "fn": 9,
+    "precision": 0.5094,
+    "recall": 0.75,
+    "f1": 0.6067
+  },
+  "strict_recall_by_lang": {
+    "go": 0.25,
+    "ini": 0.0,
+    "java": 0.2308,
+    "js": 0.0,
+    "json": 1.0,
+    "py": 0.75,
+    "sh": 1.0,
+    "ts": 0.5,
+    "xml": 1.0,
+    "yaml": 0.6667
+  }
+}

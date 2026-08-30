@@ -1,0 +1,54 @@
+{
+  "benchmark": "SecMask RealCode-1 / RC-C-v1 (blind natural adjudicator)",
+  "subset_sha256": "ec75343d5d68",
+  "labels_sha256": "9389f7a6c3b1",
+  "labeler": "human, blind; suggestions were transparent heuristic, every call human-verified/overridden",
+  "intra_rater_agreement": "48/48 = 1.0 (after reconciling 3 blind-duplicate disagreements)",
+  "candidate_pool_note": "~89% high-entropy base64 literals (crypto blobs / encoded data / test vectors); human resolved to decisive N/P from context",
+  "counts": {
+    "positives": 45,
+    "negatives": 353,
+    "ambiguous_excluded": 2
+  },
+  "tau": 0.99,
+  "labeled_candidate_basis": {
+    "v3.2": {
+      "recall_strict": 0.067,
+      "recall_overlap": 0.067,
+      "neg_fp_rate": 0.079,
+      "fp": 28
+    },
+    "v3.3a-1": {
+      "recall_strict": 0.378,
+      "recall_overlap": 0.444,
+      "neg_fp_rate": 0.133,
+      "fp": 47
+    },
+    "v3.3a-RS": {
+      "recall_strict": 0.467,
+      "recall_overlap": 0.533,
+      "neg_fp_rate": 0.096,
+      "fp": 34
+    }
+  },
+  "paired_mcnemar_a1_vs_RS": {
+    "positives_strict_recall": {
+      "a1_only_hit": 1,
+      "RS_only_hit": 5,
+      "p_two_sided": 0.2188,
+      "significant": false
+    },
+    "negatives_false_flag": {
+      "a1_only_fp": 18,
+      "RS_only_fp": 5,
+      "p_two_sided": 0.0106,
+      "significant": true,
+      "direction": "RS more precise"
+    }
+  },
+  "off_candidate_flags": {
+    "v3.3a-1": 126,
+    "v3.3a-RS": 100
+  },
+  "verdict": "H2 \u2014 RS >= a1 on blind natural code (Pareto: higher recall, significantly lower FP). a1's Pareto-dominance is CONFINED to the targeted RC-A/B uuid/hash lookalike frontier."
+}

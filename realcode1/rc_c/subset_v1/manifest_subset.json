@@ -1,0 +1,204 @@
+{
+  "benchmark": "SecMask RealCode-1 / RC-C-v1 (stratified eval subset)",
+  "stage": "SUBSET FROZEN \u2014 before any label seen",
+  "seed": 20260829,
+  "n_target": 400,
+  "n_selected": 400,
+  "n_reserved": 1001,
+  "full_candidates_sha256": "b31097c09a2088fc2effca2c1c3518ac04202ee07624746d4352760c150cdb9d",
+  "subset_sha256": "ec75343d5d68c778dd904e11321766be03d83df44cfdc77dd94fa30bdc672d22",
+  "n_strata": 47,
+  "blind_duplicates": 48,
+  "packets": 448,
+  "strata": {
+    "entropy|go|b64ish:l:hi": {
+      "pool": 6,
+      "selected": 1
+    },
+    "entropy|go|b64ish:m:hi": {
+      "pool": 1,
+      "selected": 1
+    },
+    "entropy|go|b64ish:m:md": {
+      "pool": 4,
+      "selected": 1
+    },
+    "entropy|go|b64ish:s:lo": {
+      "pool": 1,
+      "selected": 1
+    },
+    "entropy|go|b64ish:s:md": {
+      "pool": 14,
+      "selected": 3
+    },
+    "entropy|ini|hexlo:s:lo": {
+      "pool": 2,
+      "selected": 1
+    },
+    "entropy|java|b64ish:l:hi": {
+      "pool": 830,
+      "selected": 236
+    },
+    "entropy|java|b64ish:m:hi": {
+      "pool": 32,
+      "selected": 9
+    },
+    "entropy|java|b64ish:m:md": {
+      "pool": 44,
+      "selected": 12
+    },
+    "entropy|java|b64ish:s:lo": {
+      "pool": 4,
+      "selected": 1
+    },
+    "entropy|java|b64ish:s:md": {
+      "pool": 34,
+      "selected": 9
+    },
+    "entropy|json|b64ish:l:hi": {
+      "pool": 266,
+      "selected": 75
+    },
+    "entropy|json|b64ish:m:hi": {
+      "pool": 28,
+      "selected": 7
+    },
+    "entropy|json|b64ish:m:md": {
+      "pool": 5,
+      "selected": 1
+    },
+    "entropy|json|b64ish:s:md": {
+      "pool": 5,
+      "selected": 1
+    },
+    "entropy|js|b64ish:l:hi": {
+      "pool": 22,
+      "selected": 6
+    },
+    "entropy|js|b64ish:m:hi": {
+      "pool": 2,
+      "selected": 1
+    },
+    "entropy|js|b64ish:m:md": {
+      "pool": 1,
+      "selected": 1
+    },
+    "entropy|js|b64ish:s:lo": {
+      "pool": 1,
+      "selected": 1
+    },
+    "entropy|js|b64ish:s:md": {
+      "pool": 2,
+      "selected": 1
+    },
+    "entropy|js|hexlo:s:lo": {
+      "pool": 1,
+      "selected": 1
+    },
+    "entropy|py|b64ish:m:hi": {
+      "pool": 7,
+      "selected": 1
+    },
+    "entropy|py|b64ish:m:md": {
+      "pool": 6,
+      "selected": 1
+    },
+    "entropy|py|b64ish:s:lo": {
+      "pool": 4,
+      "selected": 1
+    },
+    "entropy|py|b64ish:s:md": {
+      "pool": 13,
+      "selected": 3
+    },
+    "entropy|sh|b64ish:m:md": {
+      "pool": 1,
+      "selected": 1
+    },
+    "entropy|sh|b64ish:s:lo": {
+      "pool": 1,
+      "selected": 1
+    },
+    "entropy|toml|b64ish:s:md": {
+      "pool": 2,
+      "selected": 1
+    },
+    "entropy|toml|hexlo:s:lo": {
+      "pool": 2,
+      "selected": 1
+    },
+    "entropy|ts|b64ish:l:hi": {
+      "pool": 1,
+      "selected": 1
+    },
+    "entropy|ts|b64ish:s:md": {
+      "pool": 7,
+      "selected": 1
+    },
+    "entropy|xml|b64ish:l:hi": {
+      "pool": 2,
+      "selected": 1
+    },
+    "entropy|xml|b64ish:s:lo": {
+      "pool": 1,
+      "selected": 1
+    },
+    "entropy|xml|b64ish:s:md": {
+      "pool": 7,
+      "selected": 1
+    },
+    "entropy|yaml|b64ish:m:hi": {
+      "pool": 4,
+      "selected": 1
+    },
+    "entropy|yaml|b64ish:m:md": {
+      "pool": 1,
+      "selected": 1
+    },
+    "entropy|yaml|b64ish:s:lo": {
+      "pool": 1,
+      "selected": 1
+    },
+    "entropy|yaml|b64ish:s:md": {
+      "pool": 5,
+      "selected": 1
+    },
+    "gitleaks|go|mixed:l:hi": {
+      "pool": 1,
+      "selected": 1
+    },
+    "gitleaks|java|mixed:l:hi": {
+      "pool": 14,
+      "selected": 3
+    },
+    "gitleaks|java|mixed:m:md": {
+      "pool": 1,
+      "selected": 1
+    },
+    "gitleaks|py|mixed:l:hi": {
+      "pool": 1,
+      "selected": 1
+    },
+    "gitleaks|yaml|mixed:l:hi": {
+      "pool": 3,
+      "selected": 1
+    },
+    "pem_private|go|mixed:l:hi": {
+      "pool": 2,
+      "selected": 1
+    },
+    "pem_private|java|mixed:l:hi": {
+      "pool": 4,
+      "selected": 1
+    },
+    "vendor_prefix|go|vendor:l:hi": {
+      "pool": 4,
+      "selected": 1
+    },
+    "vendor_prefix|ts|vendor:l:hi": {
+      "pool": 1,
+      "selected": 1
+    }
+  },
+  "reserve_policy": "frozen; RC-C-v2 expansion must be pre-registered from reserve, no post-result re-harvest"
+}

@@ -1,0 +1,33 @@
+{
+  "benchmark": "SecMask RealCode-1 / RC-B",
+  "provenance": "real code context + SYNTHETIC injected positive value",
+  "selection_sha": "580b57457e4f24925fbac1fb704819dc9944357ac048859db1c3a89c30b60d50",
+  "files": 710,
+  "positives": 710,
+  "by_family": {
+    "generic_password": 178,
+    "generic_api_key": 178,
+    "generic_high_entropy": 177,
+    "basic_auth_header": 177
+  },
+  "by_language": {
+    "xml": 56,
+    "java": 111,
+    "ts": 26,
+    "py": 119,
+    "json": 62,
+    "yaml": 55,
+    "js": 131,
+    "go": 131,
+    "properties": 7,
+    "toml": 8,
+    "cfg": 1,
+    "sh": 1,
+    "conf": 2
+  },
+  "policy": "injected synthetic prefixless positive; host file scanner-CLEAN",
+  "corpus_sha256": "39a15eba4dc317c5500f7dfe74637da962be89bf0439caa82bcd113f7e35a3ae",
+  "frozen": true,
+  "ground_truth_revision": "1.1 \u2014 basic_auth_header span corrected to credential-only (excluded non-secret 'Basic ' scheme keyword); code files byte-identical, corpus_sha256 unchanged",
+  "ground_truth_sha256": "ae2a3270ce9b60051d3fc5919626a5d851a728421e947055ffd27f84084dd35d"
+}

@@ -1,0 +1,44 @@
+{
+  "tag": "v33aRS",
+  "tau": 0.99,
+  "n_positive": 45,
+  "n_negative": 353,
+  "n_ambiguous_excluded": 2,
+  "strict_span_and_line": {
+    "tp": 21,
+    "fp": 138,
+    "fn": 24,
+    "precision": 0.1321,
+    "recall": 0.4667,
+    "f1": 0.2059
+  },
+  "exact_span": {
+    "tp": 21,
+    "fp": 138,
+    "fn": 24,
+    "precision": 0.1321,
+    "recall": 0.4667,
+    "f1": 0.2059
+  },
+  "overlap_recall": 0.5333,
+  "file_level": {
+    "tp": 26,
+    "fp": 20,
+    "fn": 10,
+    "precision": 0.5652,
+    "recall": 0.7222,
+    "f1": 0.6341
+  },
+  "strict_recall_by_lang": {
+    "go": 0.5,
+    "ini": 0.0,
+    "java": 0.3462,
+    "js": 1.0,
+    "json": 1.0,
+    "py": 0.75,
+    "sh": 1.0,
+    "ts": 0.0,
+    "xml": 1.0,
+    "yaml": 0.6667
+  }
+}
