@@ -1,0 +1,23 @@
+# SecretMask Requirements
+# Production dependencies for v1 deployment
+
+# Core dependencies
+torch>=2.0.0
+transformers>=4.30.0
+
+# Optional: For better performance on specific platforms
+# torch[mps]  # For Apple Silicon (M1/M2)
+# torch[cuda]  # For NVIDIA GPUs
+
+# Development dependencies (uncomment for dev environment)
+# pytest>=7.0.0
+# black>=23.0.0
+# flake8>=6.0.0
+# mypy>=1.0.0
+
+# Server dependencies (uncomment if deploying as web service)
+# flask>=2.3.0
+# gunicorn>=20.1.0
+
+# Monitoring (uncomment for production)
+# prometheus-client>=0.16.0

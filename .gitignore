@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Model weights & training outputs (weights are published on Hugging Face)
+outputs/
+models/
+*.pt
+*.pth
+*.ckpt
+
+# NEVER commit raw secret corpora or credential-bearing artifacts
+creddata/
+benchmark_b/files/
+benchmark_c/files/
+benchmark_d/files/
+benchmark_*/gold_spans.jsonl
+benchmark_*/ground_truth.jsonl
+reports/preds_*.jsonl
+reports/*errrow*.jsonl
+*.pem
+*.key
+
+# scratch
+_release/
+_to_delete/
+_sanitation_proof_out/
+.DS_Store
+
+# unused v2 utilities (not needed by v3 path; contain example PEM blocks)
+features.py
+filters.py
+chunking.py
+
+# external eval datasets — fetched separately, never vendored (see data/README.md)
+data/extbench/
