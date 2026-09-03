@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
-"""Benchmark D (interim injection-based) — score the three systems ONCE
-with the FROZEN operating point (reports/hybrid_frozen.json):
+"""Benchmark D (interim injection-based) — score gitleaks and the standalone
+model ONCE with the FROZEN operating point:
   * standalone Gitleaks 8.30.1
   * standalone v3.2 (windowed span_infer, tau .85)
-  * SecMask Hybrid = Variant A (gl-priority union, boundary snap, tau_v .85)
 Integrity-gated (corpus sha256 vs manifest) + leakage check vs all
 internal/B/C values. Run in your terminal:  ~/venv/bin/python run_benchD.py
 """
@@ -66,9 +65,7 @@ def main():
     with open("reports/benchD_v32_argmax.jsonl","w") as f:
         for k,v in v32.items(): f.write(json.dumps({"id":k,"spans":v},ensure_ascii=False)+"\n")
 
-    def ov_any(s,spans): return any(min(s["end"],g["end"])>max(s["start"],g["start"]) for g in spans)
     v32_thr={k:[s for s in v if s.get("score",1)>=TAU] for k,v in v32.items()}
-    hybrid={k: list(gl.get(k,[])) + [s for s in v32.get(k,[]) if s.get("score",1)>=TAU and not ov_any(s,gl.get(k,[]))] for k in gold}
 
     def rep(name,pd,out):
         r={"name":name,"corpus_sha256":ch,**evaluate(gold,pd)}
@@ -78,10 +75,9 @@ def main():
               f"overlap F {o['f1']:.3f} | file P/R/F1 {fl['precision']:.3f}/{fl['recall']:.3f}/{fl['f1']:.3f} | "
               f"pred {r['pred_spans']} inflation {r['inflation_ratio']}")
         return r
-    print("\n================ BENCHMARK D — three systems ================")
+    print("\n================ BENCHMARK D — gitleaks + standalone model ================")
     rep("gitleaks-8.30.1-BENCH-D",gl,"reports/benchD_metrics_gitleaks.json")
     rep("v3.2-tau.85-BENCH-D",v32_thr,"reports/benchD_metrics_v32.json")
-    rep("SecMask-Hybrid-BENCH-D",hybrid,"reports/benchD_metrics_hybrid.json")
     print("\nDONE. (Interim injection-based D; SecretBench positives supersede when access lands.)")
 
 if __name__=="__main__": main()
